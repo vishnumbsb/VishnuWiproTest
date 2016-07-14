@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WiproCodingExercise</string>
+
+
+    <string name="no_connection_error">Check your connection and try again</string>
+    <string name="connection_timeout">Connection Time out</string>
+    <string name="common_connection_error">An error occurred, please try again later.</string>
+
+</resources>

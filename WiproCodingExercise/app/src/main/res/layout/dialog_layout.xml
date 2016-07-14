@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/layout_boarder"
+        >
+
+        <LinearLayout
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="alert"
+                android:textColor="@color/colorBlack"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/dialogMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="normal"
+                    android:typeface="normal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="15sp"
+                    android:padding="8dp" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_marginBottom="3dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_height="30dp"
+                android:layout_width="70dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="bottom"
+                android:textSize="14sp"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorPrimaryDark"
+
+                android:text="CANCEL" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_height="30dp"
+                android:layout_width="70dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_gravity="bottom"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="OK"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
